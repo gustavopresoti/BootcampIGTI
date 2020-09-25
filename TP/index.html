@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Trabalho Prático - Módulo I</title>
+  </head>
+
+  <body>
+    <h1>Escala de Cores RGB</h1>
+
+    <!-- <div class="container">
+      <div class="flex-column">
+        <ul>
+          <li class="flex-row">
+            <span class="label"></span>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+
+    <div class="container">
+      <div class="flex-column">
+        <ul>
+          <li class="flex-row">
+            <span class="label">(R) Vermelho:</span>
+            <input
+              class="range"
+              id="rangeRed"
+              value="0"
+              type="range"
+              max="255"
+              min="0"
+            />
+            <input id="inputRed" value="0" type="text" disabled />
+          </li>
+
+          <li class="flex-row">
+            <span class="label">(G) Verde:</span>
+            <input
+              class="range"
+              id="rangeGreen"
+              value="0"
+              type="range"
+              max="255"
+              min="0"
+            />
+            <input id="inputGreen" value="0" type="text" disabled />
+          </li>
+
+          <li class="flex-row">
+            <span class="label">(B) Azul:</span>
+            <input
+              class="range"
+              id="rangeBlue"
+              value="0"
+              type="range"
+              max="255"
+              min="0"
+            />
+            <input id="inputBlue" value="0" type="text" disabled />
+          </li>
+        </ul>
+
+        <div class="square" id="square"></div>
+        <li class="flex-row">
+          <span>HEX:</span>
+          <input id="inputHex" type="text" disabled />
+        </li>
+      </div>
+    </div>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
