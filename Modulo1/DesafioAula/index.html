@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Desafio - Módulo 1</title>
+  </head>
+  <body>
+    <header class="container">
+      <h1 class="center">User's Search</h1>
+      <div class="center" id="loading">
+        <div class="preloader-wrapper active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+        <span id="loading-message">
+          <h5>Loading...</h5>
+        </span>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="field-search">
+        <div class="input-field col s6">
+          <input class="validate" id="inputSearch" type="text" />
+          <label for="inputSearch">Search...</label>
+        </div>
+        <a class="waves-effect waves-light btn-small disabled" id="buttonSearch" >Buscar</a>
+      </div>
+      <div class="users-container">
+        <div class="container border-container" >
+          <h3 id="summaryUsers">No users filtered</h5>
+          <div id="tabUsers"></div>
+        </div>
+        <div class="container border-container">
+          <h3 id="summaryStatistics">Nothing to show</h5>
+          <div id="tabStatistics"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
