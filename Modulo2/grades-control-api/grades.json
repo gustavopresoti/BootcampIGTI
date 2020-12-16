@@ -1,0 +1,14 @@
+{
+  "nextID": 1,
+  "grades": [
+    {
+      "id": null,
+      "student": "Gustavo Presoti",
+      "subject": "01 - JavaScript",
+      "type": "TP",
+      "value": 69,
+      "timestamp": "2020-10-13T17:16:20.081Z"
+    }
+  ],
+  "nextId": null
+}
