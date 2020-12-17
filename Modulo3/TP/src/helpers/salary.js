@@ -86,7 +86,7 @@ function calculateDiscountIRPF(baseIRPF) {
 }
 
 function calculateSalaryFrom(fullSalary) {
-  const baseINSS = fullSalary;
+  const baseINSS = isNaN(fullSalary) ? 0 : fullSalary;
   const discountINSS = calculateDiscountINSS(baseINSS);
   const percentINSS = round((discountINSS / fullSalary) * 100);
   const checkedPercentINSS = isNaN(percentINSS) ? 0 : percentINSS;
